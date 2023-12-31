@@ -12,11 +12,11 @@ public class SingletonExample {
 
 //	public static volatile SingletonExample instance;
 //	private static Object object= new Object();
-	private SingletonExample(){
-		System.out.println("private Constructor");
+	private SingletonExample(String message){
+		System.out.println("private Constructor : "+message);
 	}
 
-	public static SingletonExample getA(){
+	public static SingletonExample getA(String message){
 
 //		SingletonExample singletonExample = instance;
 //		if(singletonExample==null){
@@ -29,7 +29,7 @@ public class SingletonExample {
 ////			instance = new SingletonExample();
 
 		if(instance==null){
-			instance = new SingletonExample();
+			instance = new SingletonExample(message);
 		}
 //		return singletonExample;
 		return instance;

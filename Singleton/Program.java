@@ -23,7 +23,8 @@ public class Program {
 //		executorService.shutdown();
 
 		// Singleton example
-//		SingletonExample singletonExample =SingletonExample.getA();
+		SingletonExample.getA("Hello");
+		SingletonExample.getA("Radhey");
 
 
 //		// normal approach
@@ -32,9 +33,11 @@ public class Program {
 //		Demo demo3 = new Demo();
 //		demo3.printMessage();
 
-		SingletonEnum.instance.print("Message from First obj");
-		SingletonEnum.instance.print("Message from Second obj");
-		SingletonEnum.instance.print("Message from Third obj");
+		// using ENUM
+
+//		SingletonEnum.instance.print("Message from First obj");
+//		SingletonEnum.instance.print("Message from Second obj");
+//		SingletonEnum.instance.print("Message from Third obj");
 
 //		can not create obj foe Enums
 //		SingletonEnum singletonEnum = new SingletonEnum();
